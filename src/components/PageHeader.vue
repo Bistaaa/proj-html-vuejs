@@ -39,7 +39,7 @@ export default {
       <p class="white">Hungry?</p>
       <h1 class="yellow">Great Food</h1>
       <h1 class="white">Delivered</h1>
-      <a href="#" id="view-menu" class="white"> VIEW OUR MENU <i class="fa-solid fa-circle-right"></i></a>
+      <a href="#" class="white red-button"> VIEW OUR MENU <i class="fa-solid fa-circle-right"></i></a>
     </div>
 
     <div id="takeout-pros">
@@ -58,6 +58,7 @@ export default {
   background-image: url(../assets/img/home-background-hero-scaled.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   position: relative;
 
@@ -156,15 +157,6 @@ export default {
 
     h1.white {
       margin-bottom: 50px;
-    }
-
-    #view-menu {
-      background-color: rgba(206, 26, 38, 255);
-      padding: 11px 25px;
-      border-radius: 20px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 14px;
     }
   }
 
