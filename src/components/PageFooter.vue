@@ -197,6 +197,7 @@ export default {
         #subscribe-button {
             width: 40%;
             margin: 20px 0 30px;
+            color: white;
         }
 
         #socials-container {
