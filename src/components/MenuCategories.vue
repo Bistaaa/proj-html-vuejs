@@ -98,7 +98,8 @@ export default {
     #menu-categories-container {
         @include my-flex-row;
         flex-wrap: wrap;
-        gap: 20px
+        gap: 20px;
+        margin: 50px 0;
     }
 
     #icons-container {

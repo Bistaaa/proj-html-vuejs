@@ -39,7 +39,7 @@ export default {
       <p class="white">Hungry?</p>
       <h1 class="yellow">Great Food</h1>
       <h1 class="white">Delivered</h1>
-      <a href="#" class="white red-button"> VIEW OUR MENU <i class="fa-solid fa-circle-right"></i></a>
+      <button class="white red-button"> VIEW OUR MENU <i class="fa-solid fa-circle-right"></i></button>
     </div>
 
     <div id="takeout-pros">

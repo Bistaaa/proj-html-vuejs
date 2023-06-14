@@ -39,7 +39,7 @@ export default {
         </div>
 
         <div id="red-button-popular-dishes">
-            <a href="#" class="red-button white">START YOUR ORDER <i class="fa-solid fa-circle-right"></i></a>
+            <button class="red-button white">START YOUR ORDER <i class="fa-solid fa-circle-right"></i></button>
         </div>
 
         <div id="main-image-container">
