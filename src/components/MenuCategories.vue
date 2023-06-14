@@ -5,6 +5,44 @@ export default {
     name: "MenuCategories",
     components: {
         CategoryCard
+    },
+    data() {
+        return {
+            categories: [
+                {
+                    src: "./src/assets/img/appetizers-menu-background.jpg",
+                    name: "APPETIZERS",
+                },
+                {
+                    src: "./src/assets/img/burgers-menu-background.jpg",
+                    name: "BURGERS",
+                },
+                {
+                    src: "./src/assets/img/pizza-menu-background.jpg",
+                    name: "PIZZAS",
+                },
+                {
+                    src: "./src/assets/img/fries-menu-background.jpg",
+                    name: "FRIERS",
+                },
+                {
+                    src: "./src/assets/img/sides-menu-background.jpg",
+                    name: "SIDES",
+                },
+                {
+                    src: "./src/assets/img/desserts-menu-background.jpg",
+                    name: "DESSERTS",
+                },
+                {
+                    src: "./src/assets/img/beverages-menu-background.jpg",
+                    name: "BEVERAGES",
+                },
+                {
+                    src: "./src/assets/img/specials-menu-background.jpg",
+                    name: "SPECIALS",
+                }
+            ]
+        }
     }
 }
 </script>
@@ -16,7 +54,7 @@ export default {
         <button id="view-menu" class="red-button">VIEW THE FULL MENU <i class="fa-solid fa-circle-right"></i></button>
 
         <div id="menu-categories-container">
-
+            <CategoryCard v-for="(category, index) in categories" :key="index" :info="category" />
         </div>
 
         <div id="icons-container">
@@ -55,6 +93,12 @@ export default {
         position: absolute;
         right: 20%;
         top: 130px;
+    }
+
+    #menu-categories-container {
+        @include my-flex-row;
+        flex-wrap: wrap;
+        gap: 20px
     }
 
     #icons-container {
