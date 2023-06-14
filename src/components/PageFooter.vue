@@ -67,7 +67,22 @@ export default {
 
         <!-- Bottom Footer -->
         <section id="bottom-footer">
-
+            <img id="logo-footer" src="../assets/img/takeout-logo.png" alt="logo-footer">
+            <h3 class="yellow">Stay In The Loop</h3>
+            <p>Sign up to receive up to date news and offers directly in your inbox:</p>
+            <input type="email" id="sign-up-mailbox" placeholder="you@email.com">
+            <button class="red-button" id="subscribe-button">SUBSCRIBE</button>
+            <div id="socials-container">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-solid fa-rss"></i>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <p id="copyright"><span class="yellow"><i class="fa-regular fa-copyright"></i> Copyright 2012 | Avada Theme by
+                </span>Theme
+                Fusion <span class="yellow">| All Right Reserved | Powered by </span>WordPress</p>
         </section>
     </div>
 </template>
@@ -152,5 +167,51 @@ export default {
     }
 
     /* Bottom Footer */
+    #bottom-footer {
+        @include my-flex-column;
+        align-items: center;
+        margin-top: 100px;
+
+        #logo-footer {
+            height: 45px;
+            margin-bottom: 50px;
+        }
+
+        h3 {
+            font-size: 45px;
+        }
+
+        p:first-of-type {
+            margin: 20px 0;
+            color: white;
+        }
+
+        #sign-up-mailbox {
+            width: 40%;
+            padding: 11px 30px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #subscribe-button {
+            width: 40%;
+            margin: 20px 0 30px;
+        }
+
+        #socials-container {
+            @include my-flex-row;
+            gap: 30px;
+            font-size: 20px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        #copyright {
+            font-size: 12px;
+            color: white;
+        }
+    }
+
 }
 </style>
