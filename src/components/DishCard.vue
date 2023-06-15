@@ -97,5 +97,6 @@ export default {
     .add-to-cart:hover {
         opacity: 1;
     }
+
 }
 </style>
